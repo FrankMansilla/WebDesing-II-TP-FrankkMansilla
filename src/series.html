@@ -6,21 +6,20 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <title>Series</title>
 </head>
+
 <body>
     <div class="series">
+        <button onclick="goToHomePage()" class="back-to-home-button">Volver a la página principal</button>
         <h2>Series</h2>
         <div class="series-container" id="seriesContainer"></div>
     </div>
     <script src="/src/scripts/script.js"></script>
-    <script src="/src/scripts/favoritos.js"></script>
     <script>
-        // Al cargar la página, llama a la función para obtener las series
-        fetchSeries();
-    
-        // Función para agregar una serie a favoritos
-        function agregarSerieAFavoritos(id) {
-            agregarSerieAFavoritos(id); // Llama a la función definida en favoritos.js
+        function goToHomePage() {
+            window.location.href = 'index.html';
         }
     </script>
+
 </body>
+
 </html>

@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Detail</title>
     <link rel="stylesheet" href="styles/mov_det.css">
 </head>
+
 <body>
+
     <body>
         <div class="movie-details">
-          <h1>Movie Details</h1>
-          <div class="details-container" id="movieDetailsContainer">
-            <!-- Aquí se mostrarán los detalles de la película -->
-          </div>
+            <button onclick="goToHomePage()" class="back-to-home-button">Volver a la página principal</button>
+            <h1>Movie Details</h1>
+            <div class="details-container" id="movieDetailsContainer">
+                <!-- Aquí se mostrarán los detalles de la película -->
+            </div>
         </div>
-      
+
+        <script>
+            function goToHomePage() {
+                window.location.href = 'index.html';
+            }
+        </script>
+
         <script src="scripts/movie_details.js"></script>
-</body>
+    </body>
+
 </html>

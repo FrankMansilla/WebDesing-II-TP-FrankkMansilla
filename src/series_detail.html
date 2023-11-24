@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Series Details</title>
     <link rel="stylesheet" href="styles/ser_det.css">
 </head>
+
 <body>
     <div class="series-details">
+        <button onclick="goToHomePage()" class="back-to-home-button">Volver a la página principal</button>
         <h1>Series Details</h1>
         <div class="details-container" id="seriesDetailsContainer">
-          <!-- Aquí se mostrarán los detalles de la serie -->
         </div>
-      </div>
-    
-      <script src="scripts/series_details.js"></script>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <script src="scripts/series_details.js"></script>
 </body>
+
 </html>

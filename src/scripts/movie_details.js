@@ -1,10 +1,8 @@
-// movie_details.js
-
 window.onload = async function() {
     const apiKey = 'd13c9cff64cdd415463b6c8ead08c95e';
     const accessToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMTNjOWNmZjY0Y2RkNDE1NDYzYjZjOGVhZDA4Yzk1ZSIsInN1YiI6IjY0Yzk4OTBlYmYwOWQxMDBlNGQ0YTQ2NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.64bWQuEZWCQl66CnHdTUAu5LV7CLzmAUrT5tIvyMtBM';
   
-    // Obtener el ID de la película desde la URL
+
     const params = new URLSearchParams(window.location.search);
     const movieId = params.get('id');
   
@@ -20,8 +18,7 @@ window.onload = async function() {
   
         if (response.ok) {
           const movieDetails = await response.json();
-  
-          // Mostrar detalles en la página
+ 
           displayMovieDetails(movieDetails);
         } else {
           console.log('Error al obtener detalles de la película');
@@ -32,10 +29,9 @@ window.onload = async function() {
     };
   
     const displayMovieDetails = (movieDetails) => {
-      // Referenciar el contenedor donde se mostrarán los detalles
+
       const movieDetailsContainer = document.getElementById('movieDetailsContainer');
   
-      // Crear elementos HTML para mostrar los detalles
       const titleElement = document.createElement('h2');
       titleElement.textContent = movieDetails.title;
       movieDetailsContainer.appendChild(titleElement);
@@ -53,7 +49,7 @@ window.onload = async function() {
       posterElement.alt = movieDetails.title;
       movieDetailsContainer.appendChild(posterElement);
   
-      // Puedes seguir añadiendo más elementos para mostrar más detalles de la película
+
     };
   
     fetchMovieDetails();

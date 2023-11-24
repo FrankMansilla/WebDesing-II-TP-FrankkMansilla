@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const user = JSON.parse(localStorage.getItem(username));
       if (user && user.password === password) {
         alert("¡Inicio de sesión exitoso!");
-        window.location.href = "index.html"; // Redirigir al usuario a index.html
+        window.location.href = "index.html";
       } else {
         alert("Usuario o contraseña incorrectos.");
       }

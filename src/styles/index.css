@@ -45,8 +45,7 @@
 }
 
 .movies h2,
-.series h2,
-.favorites h2 {
+.series h2{
   margin-bottom: 10px;
   font-size: 24px;
   text-align: center;
