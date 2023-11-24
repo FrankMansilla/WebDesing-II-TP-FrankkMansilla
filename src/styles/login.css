@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.login-container,
+.register-container {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #00bcd4;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008ba3;
+}

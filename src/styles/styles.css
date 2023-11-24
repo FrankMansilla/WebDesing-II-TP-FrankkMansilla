@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5; /* Fondo */
+}
+
+.movies,
+.series {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.movie,
+.serie {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: calc(33.33% - 20px); /* Para mostrar tres elementos en una fila */
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.poster {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.overview {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.movies-container,
+.series-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribución uniforme */
+}

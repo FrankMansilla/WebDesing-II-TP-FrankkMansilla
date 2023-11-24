@@ -1,0 +1,32 @@
+body {
+    background-color: #080808; /* Fondo oscuro */
+    color: #fff; /* Texto en color claro */
+    font-family: 'Arial', sans-serif; /* Tipografía moderna */
+  }
+
+  .movie-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Dar un borde redondeado a las imágenes */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Sombra suave */
+  }

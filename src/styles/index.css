@@ -1,0 +1,102 @@
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 30px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #aaa;
+}
+
+.movies,
+.series,
+.favorites {
+  margin: 20px;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.movies h2,
+.series h2,
+.favorites h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.movies {
+  border-top: 4px solid #ffcc00;
+}
+
+.series {
+  border-top: 4px solid #ff6600;
+}
+
+.main-image {
+  max-width: 60%;
+
+  display: block;
+  margin: 0 auto;
+ 
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+footer p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos-redes a {
+  margin: 0 10px;
+}
+
+.iconos-redes img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.iconos-redes img:hover {
+  transform: scale(1.2);
+}
